@@ -17,10 +17,19 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30, "hasDog": False },
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
+# 1 variantas ko praso pratimai
+def filter_dog_owners(array):
+  return [x for x in array if x['hasDog']]
 
+def filtered_age(array):
+  return [x for x in array if x['age'] >= 18]
+    
+#print(filter_dog_owners(users))
+#print(filtered_age(users))
 
+# 2 variantas
 
 filtered_dogs = [x for x in users if x['hasDog']]
 filtered_age = [x for x in users if x['age'] >= 18]
-print(filtered_dogs)
-print(filtered_age)
+#print(filtered_dogs)
+#print(filtered_age)
